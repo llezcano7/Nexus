@@ -73,13 +73,29 @@ position: absolute;       /* Se mantiene fija al hacer scroll */
   position: relative;
 }
 
+.inicio-pictures {
+  min-height: 400px;
+}
+
 .icon {
   z-index: 3;
   position: relative;
 }
 
 .section-container-2 {
-  height: 800px;
+  min-height: 800px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inicio-pictures {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .picture-1 {
