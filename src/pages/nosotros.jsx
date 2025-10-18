@@ -5,7 +5,7 @@ export default function Nosotros() {
     return (
         <>
             <section className="nosotros-section display-flex flex-column align-center justify-center padding-block-18">
-                <div className="justify-center display-flex align-center gap-2">
+                <div className="justify-center display-flex align-center gap-2">    
                     <div className="display-flex flex-column gap-1 align-end">
                         <div className="square bg-4 padding-block-4 display-flex flex-column padding-inline-start-2 justify-center">
                             <h4 className="font-size-5 font-light">Acerca de <br /><span className="uppercase font-bold">nexus</span></h4>

@@ -17,11 +17,9 @@ export default function Header() {
       </Link>
 
       {/* Botón hamburguesa */}
-       <div className="header-content">
        <button className="hamburger-btn" onClick={toggleMenu}>
         {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
       </button>
-      </div>
 
         <nav className={`navbar align-end relative display-flex space-between gap-3 ${isOpen ? "open" : ""}`}>
           <Link className="link font-color-3" to="/" onClick={closeMenu}>Inicio</Link>
