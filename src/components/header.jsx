@@ -1,19 +1,34 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
 import Scroll from "../components/scroll";
-import "./header.css"
-
+import "./header.css";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <header className="header-container container display-flex align-center space-between height-12">
-        <Link to='/'> <img className="logo" src="/public/logo.webp" alt="" srcset="" /> </Link>
-        <Scroll>
-        <nav className="navbar align-end relative display-flex space-between gap-3">
-            <Link to='/'> <a className="font-color-3" href="/">Inicio</a></Link>
-            <Link to= '/nosotros'><a className="font-color-3" href="/nosotros">Nosotros</a></Link>
-            <Link to= '/servicios'><a className="font-color-3" href="/servicios">Servicios</a></Link>
-            <Link to= '/contacto'><a className="font-color-3" href="/contacto">Contacto</a></Link>
+      <Link to="/">
+        <img className="logo" src="/public/logo.webp" alt="Logo" />
+      </Link>
+
+      {/* Botón hamburguesa */}
+       <div className="header-content">
+       <button className="hamburger-btn" onClick={toggleMenu}>
+        {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
+      </button>
+      </div>
+
+        <nav className={`navbar align-end relative display-flex space-between gap-3 ${isOpen ? "open" : ""}`}>
+          <Link className="link font-color-3" to="/" onClick={closeMenu}>Inicio</Link>
+          <Link className="link font-color-3" to="/nosotros" onClick={closeMenu}>Nosotros</Link>
+          <Link className="link font-color-3" to="/servicios" onClick={closeMenu}>Servicios</Link>
+          <Link className="link font-color-3" to="/contacto" onClick={closeMenu}>Contacto</Link>
         </nav>
-        </Scroll>
     </header>
-    )}
+  );
+}

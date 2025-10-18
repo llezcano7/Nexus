@@ -5,11 +5,27 @@
     z-index: 10;
 }
 
-.navbar a:hover {
+.navbar .link:hover {
     text-decoration: underline var(--fourth-color);
     text-underline-offset: 5px;
 }
 .logo {
     width: 100px;
     height: 100px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* logo a la izquierda, hamburguesa a la derecha */
+  align-items: center;
+  height: 100px;
+}
+
+.hamburger-btn {
+  display: none;
+  background: var(--fourth-color);
+  color: var(--third-color);
+  border: none; 
+  cursor: pointer;
+  z-index: 20;
 }

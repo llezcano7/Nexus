@@ -871,7 +871,6 @@
   transition: all 0.3s ease;
 }
 
-/* === TABLET (Pantallas medianas) === */
 @media (max-width: 1023px) {
   .inicio-container {
     height: 500px;
@@ -914,9 +913,7 @@
 
 }
 
-
-/* === MOBILE (Pantallas chicas) === */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .video {
     height: 400px;
   }
@@ -966,4 +963,34 @@
   .inicio-text-2 p {
     font-size: 1rem;
   }
+  
+   .inicio-text-2 {
+    width: var(--percentage-1);
+  }
 }
+
+@media (max-width: 768px) {
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 42, 52, 0.95);
+    height: 100vh;
+    width: 100%;
+    gap: 2rem;
+    transition: right 0.4s ease-in-out;
+    display: flex; /* importante mantener flex */
+  }
+
+  .navbar.open {
+    right: 0;
+    border-left: 1px solid var(--fourth-color);
+  }
+
+  .hamburger-btn {
+    display: block;
+  }}
