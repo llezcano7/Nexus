@@ -1103,3 +1103,36 @@
 
 /*CONTACTO RESPONSIVE*/
 
+@media (max-width: 1286px) {
+.contact-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.picture-2 {
+  display: none;
+}
+.form-container {
+  text-align: center;
+}
+}
+
+@media (max-width: 930px) {
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-message {
+    width: 360px !important;
+  }
+}
+@media (max-width: 542px) {
+  .input-message, .input-email, .input-text {
+    width: 100% !important;
+    max-width: 100% !important
+  }
+}
