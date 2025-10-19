@@ -5,18 +5,18 @@ import { FaCheck } from "react-icons/fa";
 export default function Servicios() {
     return (
         <section className="servicios-container container display-flex flex-column align-center padding-block-18 bg-3">
-            <h2 className="font-size-4 font-color-1 slide-left uppercase padding-block-end-4"> <span className="font-light font-color-4">Nuestros</span> servicios</h2>
-            <div className="display-flex container align-center gap-3 bg-1">
+            <h2 className="servicios-title font-size-4 font-color-1 slide-left uppercase padding-block-end-4"> <span className="font-light font-color-4">Nuestros</span> servicios</h2>
+            <div className="servicios-content-1 display-flex align-center gap-3 bg-1">
                 <p className="padding-inline-start-2 font-size-2 font-light font-color-3">Somos distribuidores mayoristas de combustibles líquidos y lubricantes para flotas, industrias, obras y establecimientos agropecuarios. 
                     <br />
                     <br />
                     Trabajamos con proveedores líderes del mercado nacional, asegurando calidad certificada, cumplimiento normativo y entrega eficiente en todo el país.</p>
                 <img className="picture-9" src="/public/picture-9.webp" alt="" srcset="" />
             </div>
-            <div className=" display-flex container align-center gap-3 bg-4 width-1">
+            <div className="servicios-content-2 width-1 display-flex align-center gap-3 bg-4">
                 <img className="picture-9" src="/public/picture-9.webp" alt="" srcset="" />
                 <div className="ul-content display-flex flex-column gap-2">
-                    <h4 className="font-size-4 font-light font-color-1">Ofrecemos</h4>
+                    <h4 className="service-content-2-title font-size-4 font-light font-color-1">Ofrecemos</h4>
                     <ul>
                         <li className="font-size-2 font-light"><FaCheck className="font-size-1 font-color-1" /> Venta mayorista y minorista de gasoil y naftas</li>
                         <br />

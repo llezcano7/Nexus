@@ -12,7 +12,7 @@ export default function Nosotros() {
                         </div>
                         <img className="picture-6 padding-block-end-2" src="/public/picture-6.webp" alt="" />
                     </div>
-                    <div className="width-8 font-size-2">
+                    <div className="nosotros-text width-8 font-size-2">
                         <p>Nexus Combustibles nace con el propósito de brindar soluciones integrales en la comercialización y gestión del consumo  energético, con foco en combustibles, lubricantes y eficiencia operativa.
                             Nuestra misión es acompañar a empresas y organizaciones en el control, la trazabilidad y la optimización de sus recursos, combinando experiencia en gestión, tecnología de monitoreo y un enfoque basado en datos reales.
                             <br /> <br />Desde el abastecimiento mayorista hasta la auditoría de consumos, trabajamos para que cada litro cuente: reduciendo pérdidas, detectando desvíos y generando información precisa para la toma de decisiones.
@@ -25,21 +25,21 @@ export default function Nosotros() {
                         <h2 className="font-size-4 font-color-3 slide-left uppercase"> <span className="font-light font-color-4">Confían</span> en nosotros</h2>
                     </Scroll>
                 </div>
-                <div className="padding-block-7 width-1 display-flex flex-column align-center justify-center">
-                    <div className="display-flex">
+                <div className="company-container padding-block-7 width-1 display-flex flex-column align-center justify-center">
+                    <div className="company-list display-flex">
                         Transporte Andina S.A.
-
+                        <br />
                         Patagonia Constructora
-
+                        <br />
                         Agroservicios del Sur
                     </div>
-                    <div className="display-flex"></div>
-                    Transporte Andina S.A.
-
-                    Patagonia Constructora
-
-                    Agroservicios del Sur
-                </div>
+                        <div className="company-list display-flex"></div>
+                        Transporte Andina S.A.
+                        <br />
+                        Patagonia Constructora
+                        <br />
+                        Agroservicios del Sur
+                    </div>
             </section>
         </>
     )
