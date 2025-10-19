@@ -89,15 +89,6 @@ position: absolute;       /* Se mantiene fija al hacer scroll */
   flex-wrap: wrap;
 }
 
-.inicio-pictures {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 .picture-1 {
   right: 5px;
   top: 90px;

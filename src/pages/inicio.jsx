@@ -21,7 +21,7 @@ export default function Inicio() {
       </div >
       <div className="separator padding-block-6 bg-3 text-center">
         <Scroll>
-          <h2 className="font-size-4 font-color-1 slide-left uppercase"> <span className="font-light font-color-4">Somos</span> energía en movimiento</h2>
+          <h2 className="font-size-4 font-color-1 uppercase"> <span className="font-light font-color-4">Somos</span> energía en movimiento</h2>
         </Scroll>
       </div>
       <section className="section-container display-flex">
@@ -50,14 +50,16 @@ export default function Inicio() {
       </section>
       <Scroll>
       <section className="section-container-2 container display-flex align-center bg-3">
-        <div className="inicio-text-2 width-6 container">
+        <div className="inicio-text-container display-flex space-between">
+        <div className="inicio-text-2 width-6">
           <h4 className="font-size-3 font-color-4 padding-block-end-2">Visión estratégica</h4>
           <p className="font-size-2 font-color-1 font-light">Nuestra visión trasciende el rol tradicional del proveedor de combustible. Nos posicionamos como aliados energéticos de nuestros clientes, ofreciendo soluciones integrales que combinan abastecimiento con herramientas de gestión inteligente
             Nuestra meta es ayudarte a tomar decisiones informadas, reduciendo costos operativos y optimizando el uso de recursos. En Nexus, creemos que la energía es más que un producto: <span className="font-bold">es el motor que impulsa tu éxito.</span></p>
         </div>
-        <div className="inicio-pictures width-6 relative">
+        <div className="inicio-pictures display-flex justify-center align-center gap-1 width-6 relative">
           <img className="picture-2 width-4 height-auto" src="picture-2.webp" alt="" />
           <img className="picture-1 width-4 height-auto absolute" src="picture-1.webp" alt="" />
+        </div>
         </div>
       </section>
       </Scroll>

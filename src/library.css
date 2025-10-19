@@ -890,29 +890,34 @@
   }
 
   .section-container-2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: auto;
     padding-block: 3rem;
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .inicio-text-2 {
     width: var(--percentage-1);
   }
 
-  .inicio-pictures {
+  .picture-1 {
+    width: 500px;
     align-items: center;
+    position: relative;
   }
 
-  .picture-1,
   .picture-2 {
-    position: static !important;
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    margin: 0 auto;
+    display: none;
   }
-
+ 
+ .inicio-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -955,19 +960,12 @@
     height: auto;
   }
 
-  .picture-1,
-  .picture-2 {
-    position: static;
-    width: 90%;
-    margin: 0 auto;
-  }
-
   .inicio-text-2 p {
     font-size: 1rem;
   }
   
    .inicio-text-2 {
-    width: var(--percentage-1);
+    width: var(--percentage-1)!important;
   }
 
   .hamburger-btn {
@@ -994,7 +992,19 @@
   }
 }
 
-/*NOSOTROS RESPOSIVE*/
+@media (max-width: 686px) {
+  .picture-1 {
+    position: relative;
+    width: 400px;
+  }
+}
+@media (max-width: 606px) {
+  .picture-1 {
+    display: none;
+  }
+}
+
+/*NOSOTROS RESPONSIVE*/
 
 @media (max-width: 865px) {
   .picture-6,
@@ -1045,6 +1055,7 @@
     text-align: center;
     justify-content: center;
     padding-block-end: var(--distance-8);
+    padding-inline: var(--distance-11);
   }
   .servicios-content-2 {
     display: flex;
@@ -1052,11 +1063,24 @@
     text-align: center;
     justify-content: center;
     padding-block-end: var(--distance-8);
-
+    padding-inline: var(--distance-11);
+  }
+  .servicios-content-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicios-content-3 {
+    text-align: center;
+    width: var(--percentage-1);
   }
 }
+@media (max-width: 925px) {
+  .servicios-content-2 {
+    width: 100% ;
+  }
   .servicios-content-1 p {
     font-size: var(--size-2);
+    width: var(--percentage-1);
   }
   .servicios-content-2 li {
     font-size: var(--size-2);
@@ -1067,3 +1091,15 @@
   .servicios-title {
     text-align: center;
   }
+}
+@media (max-width: 734px){
+  .picture-7,
+  .picture-9 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/*CONTACTO RESPONSIVE*/
+
