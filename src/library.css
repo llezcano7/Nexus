@@ -957,7 +957,6 @@
   .section-container-2 {
     flex-direction: column;
     gap: 2rem;
-    height: auto;
   }
 
   .inicio-text-2 p {
@@ -970,6 +969,9 @@
 
   .hamburger-btn {
     display: block !important;
+    padding-inline: none;
+    padding-block:none;
+
   }
 
   .navbar {
@@ -1021,6 +1023,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding-inline: var(--distance-4);
   }
 
   .nosotros-text {
