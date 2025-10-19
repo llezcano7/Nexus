@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 
 export default function Contacto() {
   const form = useRef();
-  const [sent, setSent] = useState(false); // 👉 estado para mostrar mensaje de éxito
+  const [sent, setSent] = useState(false); 
 
 
   const sendEmail = (e) => {
@@ -18,8 +18,8 @@ export default function Contacto() {
       .then(
         () => {
           console.log('SUCCESS!');
-          setSent(true);         // muestra el mensaje de éxito
-          form.current.reset();  // limpia los campos del formulario
+          setSent(true);
+          form.current.reset();
           setTimeout(() => setSent(false), 4000);
         },
         (error) => {
@@ -33,7 +33,6 @@ export default function Contacto() {
     <div className="contact-container container align-center justify-center display-flex gap-6 padding-block-18">
       <div className="form-container">
         <h2 className="form-title slide-down font-size-4 font-light font-color-4 padding-block-4">Contacto</h2>
-          {/* Mensaje de éxito */}
         {sent && (
           <div className="success-message">
             ✅ Su mensaje ha sido enviado correctamente.
@@ -41,14 +40,15 @@ export default function Contacto() {
         )}
         <form className="form display-flex flex-column align-center gap-3" ref={form} onSubmit={sendEmail}>
           <div className="input-container display-flex gap-2">
-            <input className="input-text" type="text" name="user_name" />
-            <input className="input-email" type="email" name="user_email" />
+            <input className="input-text" placeholder="Nombre completo" type="text" name="user_name" re />
+            <input className="input-email" placeholder="E-mail" type="email" name="user_email" required />
           </div>
           <div className="input-container-2 display-flex flex-column align-center gap-3">
-            <input className="input-message" type="text" />
+            <input className="input-message" placeholder="Mensaje" type="text" required />
             <button className="btn-1 z-index-2" type="submit">Enviar</button>
           </div>
-        </form>  </div>
+        </form>
+      </div>
       <img className="picture-2" src="picture-3.webp" alt="" />
     </div>
   );
