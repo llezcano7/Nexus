@@ -11,10 +11,10 @@ export default function Inicio() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="inicio-container container relative display-flex flex-column flex-center">
+      <div className="inicio-container container relative display-flex flex-column justify-center">
         <video autoPlay loop muted className="video width-1" src="public/video.mp4">
         </video>
-        <div className="inicio-content absolute width-7">
+        <div className="inicio-content relative z-index-2 width-7">
           <h1 className="font-size-4 uppercase"> <span className="font-light">Transportamos</span> Energía</h1>
           <p className="padding-block-start-2">En Nexus somos especialistas en la venta y distribución de combustibles destacándonos por brindar un servicio seguro, eficiente y personalizado</p>
           <div className="padding-block-start-5">
@@ -30,7 +30,7 @@ export default function Inicio() {
         </Scroll>
       </div>
       <Scroll>
-        <section className="section-container display-flex">
+        <section className="section-container width-1 display-flex">
           <div className="section-content-1 width-6 container text-center padding-block-4">
             <h3 className="uppercase font-color-1 padding-block-2">Abastecimiento y transporte</h3>
             <MdOilBarrel className="icon font-color-1 font-size-4" />
@@ -57,13 +57,13 @@ export default function Inicio() {
       </Scroll>
       <Scroll>
         <section className="section-container-2 container display-flex align-center bg-3">
-          <div className="inicio-text-container display-flex space-between">
-            <div className="inicio-text-2 width-6">
+          <div className="inicio-text-container display-flex justify-center align-center space-between">
+            <div className="inicio-text-2 width-6  padding-block-5">
               <h4 className="font-size-3 font-color-4 padding-block-end-2">Visión estratégica</h4>
               <p className="font-size-2 font-color-1 font-light">Nuestra visión trasciende el rol tradicional del proveedor de combustible. Nos posicionamos como aliados energéticos de nuestros clientes, ofreciendo soluciones integrales que combinan abastecimiento con herramientas de gestión inteligente
                 Nuestra meta es ayudarte a tomar decisiones informadas, reduciendo costos operativos y optimizando el uso de recursos. En Nexus, creemos que la energía es más que un producto: <span className="font-bold">es el motor que impulsa tu éxito.</span></p>
             </div>
-            <div className="inicio-pictures display-flex justify-center align-center gap-1 width-6 relative">
+            <div className="inicio-pictures display-flex padding-block-4 justify-center align-center gap-1 width-6 relative">
               <img className="picture-2 width-4 height-auto" src="picture-2.webp" alt="" />
               <img className="picture-1 width-4 height-auto absolute" src="picture-1.webp" alt="" />
             </div>

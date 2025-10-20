@@ -4,8 +4,8 @@ import Scroll from "../components/scroll";
 export default function Nosotros() {
     return (
         <>
-            <section className="nosotros-section display-flex flex-column align-center justify-center padding-block-18">
-                <div className="justify-center display-flex align-center gap-2">    
+            <section className="nosotros-section hidden display-flex flex-column align-center justify-center padding-block-18">
+                <div className="justify-center display-flex align-center gap-2">
                     <div className="display-flex flex-column gap-1 align-end">
                         <div className="square bg-4 padding-block-4 display-flex flex-column padding-inline-start-2 justify-center">
                             <h4 className="font-size-5 font-light">Acerca de <br /><span className="uppercase font-bold">nexus</span></h4>
@@ -26,20 +26,14 @@ export default function Nosotros() {
                     </Scroll>
                 </div>
                 <div className="company-container padding-block-7 width-1 display-flex flex-column align-center justify-center">
-                    <div className="company-list display-flex">
+                    <div className="company-list display-flex text-center">
                         Transporte Andina S.A.
                         <br />
                         Patagonia Constructora
                         <br />
                         Agroservicios del Sur
                     </div>
-                        <div className="company-list display-flex"></div>
-                        Transporte Andina S.A.
-                        <br />
-                        Patagonia Constructora
-                        <br />
-                        Agroservicios del Sur
-                    </div>
+                </div>
             </section>
         </>
     )

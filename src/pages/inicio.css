@@ -1,5 +1,5 @@
 .video{
-position: absolute;       /* Se mantiene fija al hacer scroll */
+  position: absolute;       /* Se mantiene fija al hacer scroll */
   top: 0;
   left: 0;
   width: 100%;
@@ -12,11 +12,6 @@ position: absolute;       /* Se mantiene fija al hacer scroll */
 .inicio-container {
   height: 600px;
   overflow: hidden;
-}
-
-.inicio-content {
-  position: relative;
-  z-index: 2;
 }
 
 .section-content-1, .section-content-2 {
@@ -77,15 +72,17 @@ position: absolute;       /* Se mantiene fija al hacer scroll */
   min-height: 400px;
 }
 
+.inicio-pictures:empty {
+  display: none; /* si no hay imágenes, desaparece el contenedor */
+}
+
 .icon {
   z-index: 3;
   position: relative;
 }
 
 .section-container-2 {
-  min-height: 800px;
-  height: auto;
-  display: flex;
+  overflow: hidden;
   flex-wrap: wrap;
 }
 

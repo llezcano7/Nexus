@@ -7,7 +7,7 @@ export default function Servicios() {
         <section className="servicios-container container display-flex flex-column align-center padding-block-18 bg-3">
             <h2 className="servicios-title font-size-4 font-color-1 uppercase padding-block-end-4"> <span className="font-light font-color-4">Nuestros</span> servicios</h2>
             <div className="servicios-content-1 width-1 display-flex align-center gap-3 bg-1">
-                <p className="padding-inline-start-2 font-size-2 font-light font-color-3">Somos distribuidores mayoristas de combustibles líquidos y lubricantes para flotas, industrias, obras y establecimientos agropecuarios. 
+                <p className="padding-inline-start-2 width-1 font-size-2 font-light font-color-3">Somos distribuidores mayoristas de combustibles líquidos y lubricantes para flotas, industrias, obras y establecimientos agropecuarios. 
                     <br />
                     <br />
                     Trabajamos con proveedores líderes del mercado nacional, asegurando calidad certificada, cumplimiento normativo y entrega eficiente en todo el país.</p>
@@ -15,7 +15,7 @@ export default function Servicios() {
             </div>
             <div className="servicios-content-2 width-1  display-flex align-center gap-3 bg-4">
                 <img className="picture-9" src="/public/picture-9.webp" alt="" srcset="" />
-                <div className="ul-content display-flex flex-column gap-2">
+                <div className="ul-content width-1 display-flex flex-column align-center gap-1">
                     <h4 className="service-content-2-title font-size-4 font-light font-color-1">Ofrecemos</h4>
                     <ul>
                         <li className="font-size-2 font-light"><FaCheck className="font-size-1 font-color-1" /> Venta mayorista y minorista de gasoil y naftas</li>
@@ -30,7 +30,7 @@ export default function Servicios() {
                     </ul>
                 </div>
             </div>
-            <div className="servicios-separator width-1 margin-block-4 padding-block-6 bg-3 text-center">
+            <div className="servicios-separator width-1 padding-block-start-3 bg-3 text-center">
                 <h2 className="font-size-4 font-color-1 font-light"> Gestion y control de consumo</h2>
             </div>
             <div className="servicios-content-3 container bg-3 display-flex align-center justify-center gap-3">
@@ -40,7 +40,7 @@ export default function Servicios() {
                     Entregamos resultados, no solo informes:
                     nuestro trabajo se traduce en eficiencia, ahorro y control.
                 </p>
-                <div className="">
+                <div className="picture-7-container">
                     <img className="picture-7" src="/public/picture-7.webp" alt="" srcset="" />
                 </div>
             </div>
