@@ -1,11 +1,14 @@
 import "./servicios.css"
 import { FaCheck } from "react-icons/fa";
-
+import Scroll from "../components/scroll";
 
 export default function Servicios() {
+
     return (
         <section className="servicios-container container display-flex flex-column align-center padding-block-18 bg-3">
+           <Scroll>
             <h2 className="servicios-title font-size-4 font-color-1 uppercase padding-block-end-4"> <span className="font-light font-color-4">Nuestros</span> servicios</h2>
+            </Scroll>
             <div className="servicios-content-1 width-1 display-flex align-center gap-3 bg-1">
                 <p className="padding-inline-start-2 width-1 font-size-2 font-light font-color-3">Somos distribuidores mayoristas de combustibles líquidos y lubricantes para flotas, industrias, obras y establecimientos agropecuarios. 
                     <br />
@@ -30,9 +33,12 @@ export default function Servicios() {
                     </ul>
                 </div>
             </div>
+            <Scroll>
             <div className="servicios-separator width-1 padding-block-start-3 bg-3 text-center">
                 <h2 className="font-size-4 font-color-1 font-light"> Gestion y control de consumo</h2>
             </div>
+            </Scroll>
+
             <div className="servicios-content-3 container bg-3 display-flex align-center justify-center gap-3">
                 <p className="font-size-2 font-light">
                     A través de nuestro servicio de Gestión de Combustibles, en Nexus ayudamos a las empresas a entender, controlar y optimizar el uso del combustible dentro de sus operaciones, implementando sistemas de trazabilidad total del combustible, desde la compra hasta el consumo, detectando desvíos, pérdidas o ineficiencias operativas y generando reportes automáticos y auditorías personalizadas.

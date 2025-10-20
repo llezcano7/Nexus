@@ -8,10 +8,7 @@
 .servicios-container {
   width: 100%;
   overflow-x: hidden; 
-  padding-block-start: calc(18rem + 6rem); /* 18rem del padding original + 6rem de espacio para el header */
 }
-
-
 
 .servicios-content-1 p,
 .servicios-content-3 p {

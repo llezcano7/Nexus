@@ -4,11 +4,9 @@ import { MdOilBarrel } from "react-icons/md";
 import { FaHandHoldingWater } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-
-
-
 export default function Inicio() {
   const navigate = useNavigate();
+  
   return (
     <>
       <div className="inicio-container container relative display-flex flex-column justify-center">

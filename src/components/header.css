@@ -16,7 +16,7 @@
 
 .hamburger-btn {
   display: none;
-  background: var(--fourth-color);
+  background: transparent;
   color: var(--third-color);
   border: none; 
   cursor: pointer;
