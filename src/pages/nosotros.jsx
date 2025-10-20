@@ -7,16 +7,18 @@ export default function Nosotros() {
             <section className="nosotros-section hidden display-flex flex-column align-center justify-center padding-block-18">
                 <div className="justify-center display-flex align-center gap-2">
                     <div className="display-flex flex-column gap-1 align-end">
-                        <div className="square bg-4 padding-block-4 display-flex flex-column padding-inline-start-2 justify-center">
-                            <h4 className="font-size-5 font-light">Acerca de <br /><span className="uppercase font-bold">nexus</span></h4>
-                        </div>
-                        <img className="picture-6 padding-block-end-2" src="/public/picture-6.webp" alt="" />
+                            <div className="square bg-4 padding-block-4 display-flex flex-column padding-inline-start-2 justify-center">
+                                <h4 className="font-size-5 font-light">Acerca de <br /><span className="uppercase font-bold">nexus</span></h4>
+                            </div>
+                            <img className="picture-6 padding-block-end-2" src="/public/picture-6.webp" alt="" />
                     </div>
                     <div className="nosotros-text width-8 font-size-2">
+                        <Scroll>
                         <p>Nexus Combustibles nace con el propósito de brindar soluciones integrales en la comercialización y gestión del consumo  energético, con foco en combustibles, lubricantes y eficiencia operativa.
                             Nuestra misión es acompañar a empresas y organizaciones en el control, la trazabilidad y la optimización de sus recursos, combinando experiencia en gestión, tecnología de monitoreo y un enfoque basado en datos reales.
                             <br /> <br />Desde el abastecimiento mayorista hasta la auditoría de consumos, trabajamos para que cada litro cuente: reduciendo pérdidas, detectando desvíos y generando información precisa para la toma de decisiones.
                         </p>
+                        </Scroll>
                         <img className="picture-4 padding-block-start-2" src="/public/picture-4.webp" alt="" />
                     </div>
                 </div>
