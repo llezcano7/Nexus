@@ -888,13 +888,16 @@
 
   .section-container {
     flex-direction: column;
+    gap: 0;
   }
 
   .section-content-1,
   .section-content-2 {
     width: 100%;
     height: auto;
+    min-height: 350px;
     padding: 2rem;
+    margin: 0;
   }
 
   .section-container-2 {
@@ -910,13 +913,7 @@
     width: var(--percentage-1);
   }
 
-  .picture-1 {
-    width: 500px;
-    align-items: center;
-    position: relative;
-  }
-
-  .picture-2 {
+  .inicio-pictures {
     display: none;
   }
 
@@ -930,20 +927,16 @@
 
 @media (max-width: 768px) {
   .inicio-container {
-    padding-block-start: 6rem; /* deja espacio visual debajo del header */
+    height: auto;
+    padding-block: 4rem 2rem;
   }
 
   .inicio-pictures {
     display: none;
   }
 
-  .inicio-container {
-    height: auto; /* deja que el contenido determine altura */
-    padding-block: 4rem 2rem; /* espacio arriba y abajo para no pegar el contenido al header */
-  }
-
   .video {
-    height: 300px; /* más corto en móviles */
+    height: 300px;
   }
 
   .inicio-content {
@@ -967,7 +960,10 @@
 
   .section-content-1,
   .section-content-2 {
+    height: auto;
+    min-height: 300px;
     padding: 1.5rem;
+    margin: 0;
   }
 
   .section-container-2 {
@@ -987,7 +983,6 @@
     display: block !important;
     padding-inline: none;
     padding-block: none;
-
   }
 
   .navbar {
@@ -1010,13 +1005,146 @@
   }
 }
 
-
 @media (max-width: 606px) {
   .inicio-text-2 {
     width: 100%;
     padding-inline: 1rem;
     text-align: center;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .separator h2 {
+    text-align: center;
+    font-size: var(--size-3);
+  }
+
+  .section-container {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  .section-content-1,
+  .section-content-2 {
+    width: 100vw;
+    height: auto !important;
+    min-height: unset;
+    padding: 2rem 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .section-content-1 h3,
+  .section-content-2 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  /* Íconos */
+  .section-content-1 .icon,
+  .section-content-2 .icon {
+    font-size: 2.5rem;
+    margin: 1rem auto;
+  }
+
+  /* Listas */
+  .section-content-1 ul,
+  .section-content-2 ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .section-content-1 li,
+  .section-content-2 li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+
+  .inicio-text-container {
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .inicio-text-2 {
+    width: 100% !important;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+
+  .inicio-text-2 h4 {
+    font-size: 1.3rem;
+  }
+
+  .inicio-text-2 p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .inicio-pictures {
+    display: none;
+  }
+
+  .inicio-container {
+    height: auto;
+    padding-block: 2rem 1rem;
+  }
+
+  .video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .inicio-content {
+    padding: 1rem 0.5rem;
+  }
+
+  .inicio-content h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .inicio-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .btn-1 {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .section-content-1,
+  .section-content-2 {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .section-content-1 li,
+  .section-content-2 li {
+    font-size: 0.85rem;
+    padding: 0 0.25rem;
+  }
+
+  .inicio-content h1 {
+    font-size: 1.3rem;
+  }
+
+  .inicio-content p {
+    font-size: 0.85rem;
   }
 }
 
@@ -1058,6 +1186,8 @@
   }
 }
 
+
+
 /*SERVICIOS RESPONSIVE*/
 
 @media (max-width: 1075px) {
@@ -1096,8 +1226,9 @@
   .servicios-container {
     padding-block: 6rem 3rem;
   }
+
   .servicios-title {
-    margin-top: 3rem; 
+    margin-top: 3rem;
   }
 
   .container {
@@ -1138,24 +1269,30 @@
   }
 }
 
-/* Hasta 480px */
+
 @media (max-width: 480px) {
   .servicios-container {
     padding-block: 5rem 1.5rem;
-    /* ajusta relación visual */
+    padding-inline: 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .container {
-    padding-inline: 1.5rem;
+    padding-inline: 0;
   }
 
   .servicios-content-1,
   .servicios-content-2,
   .servicios-content-3 {
-    width: 100%;
-    padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
+    width: 100vw;
+    margin-left: 0;
+    padding: 2rem 1rem;
+    margin-bottom: 0;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .servicios-content-1 p,
@@ -1209,9 +1346,10 @@
 }
 
 @media (max-width: 930px) {
-  .container{
+  .container {
     padding-inline: 6rem;
   }
+
   .input-container {
     display: flex;
     flex-direction: column;
@@ -1226,7 +1364,7 @@
 }
 
 @media (max-width: 542px) {
-  
+
 
   .input-message,
   .input-email,

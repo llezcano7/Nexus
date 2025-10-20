@@ -57,15 +57,12 @@
 }
 
 .section-content-1 h3,
-.section-content-2 h3 {
-  z-index: 3;
-  position: relative;
-}
-
+.section-content-2 h3,
 .section-content-1 ul,
-.section-content-2 ul {
-  z-index: 3;
+.section-content-2 ul,
+.icon {
   position: relative;
+  z-index: 3;
 }
 
 .inicio-pictures {
@@ -73,13 +70,10 @@
 }
 
 .inicio-pictures:empty {
-  display: none; /* si no hay imágenes, desaparece el contenedor */
+  display: none; 
 }
 
-.icon {
-  z-index: 3;
-  position: relative;
-}
+.picture-1 { position: absolute; right: 5px; top: 90px; z-index: 2; }
 
 .section-container-2 {
   overflow: hidden;

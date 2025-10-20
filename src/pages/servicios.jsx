@@ -38,7 +38,6 @@ export default function Servicios() {
                 <h2 className="font-size-4 font-color-1 font-light"> Gestion y control de consumo</h2>
             </div>
             </Scroll>
-
             <div className="servicios-content-3 container bg-3 display-flex align-center justify-center gap-3">
                 <p className="font-size-2 font-light">
                     A través de nuestro servicio de Gestión de Combustibles, en Nexus ayudamos a las empresas a entender, controlar y optimizar el uso del combustible dentro de sus operaciones, implementando sistemas de trazabilidad total del combustible, desde la compra hasta el consumo, detectando desvíos, pérdidas o ineficiencias operativas y generando reportes automáticos y auditorías personalizadas.
