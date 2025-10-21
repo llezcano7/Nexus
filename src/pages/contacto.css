@@ -1,7 +1,8 @@
-CSS .contact-container {
+.contact-container {
   position: relative;
   background-image: url('/public/background-3.webp');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 700px;
 }
