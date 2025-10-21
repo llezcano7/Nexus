@@ -1077,7 +1077,7 @@
   }
 
   .inicio-text-2 {
-    width: 100% !important;
+    width: 100vh;
     padding: 1rem 0.5rem;
     text-align: center;
   }
