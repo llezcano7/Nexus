@@ -7,7 +7,7 @@
 
 .servicios-container {
   width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .servicios-content-1 p,
@@ -25,12 +25,7 @@
   padding: 0;
   margin: 0;
 }
-.servicios-separator {
-  margin-block: 2rem 1rem; /* menos espacio arriba y casi nada abajo */
-  padding-block: 1.5rem;
-}
 
 .servicios-content-3 {
-  padding-block: 2rem 3rem; /* reduce espacio inferior */
-  margin-bottom: 0; /* evita separación con el footer */
+  margin-bottom: 0;
 }

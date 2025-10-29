@@ -882,6 +882,11 @@
 /*INICIO RESPONSIVE*/
 
 @media (max-width: 1023px) {
+
+   .section-container-2.container {
+    padding-inline: 4rem; /* Reduce un poco el padding */
+  }
+
   .inicio-container {
     height: 500px;
   }
@@ -926,6 +931,10 @@
 }
 
 @media (max-width: 768px) {
+  .section-container-2 .container {
+    padding-inline: 2.5rem; 
+  }
+
   .inicio-container {
     height: auto;
     padding-block: 4rem 2rem;
@@ -1006,6 +1015,11 @@
 }
 
 @media (max-width: 606px) {
+
+   .section-container-2.container {
+    padding-inline: 1.5rem; /* Padding moderado */
+  }
+
   .inicio-text-2 {
     width: 100%;
     padding-inline: 1rem;
@@ -1015,6 +1029,14 @@
 }
 
 @media (max-width: 450px) {
+
+  .section-container-2.container {
+    padding-inline: 1rem; 
+  }
+
+  .inicio-content.p {
+    width: 100%;
+  }
 
   .separator h2 {
     text-align: center;
@@ -1128,6 +1150,10 @@
 
 @media (max-width: 375px) {
 
+  .section-container-2.container {
+    padding-inline: 0.75rem;
+  }
+
   .section-content-1,
   .section-content-2 {
     padding: 1.5rem 0.75rem;
@@ -1149,6 +1175,10 @@
 }
 
 /*NOSOTROS RESPONSIVE*/
+
+@media (max-width: 997px){
+ 
+}
 
 @media (max-width: 865px) {
 
@@ -1186,22 +1216,22 @@
   }
 }
 
-
-
 /*SERVICIOS RESPONSIVE*/
+
+@media (max-width: 1184px) {
+  .servicios-content-3 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 @media (max-width: 1075px) {
 
   .servicios-content-1,
-  .servicios-content-2,
-  .servicios-content-3 {
+  .servicios-content-2 {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
-  }
-
-  .container {
-    padding-inline: 6rem;
   }
 
   .servicios-content-1 {
@@ -1223,30 +1253,19 @@
 }
 
 @media (max-width: 734px) {
-  .servicios-container {
-    padding-block: 6rem 3rem;
-  }
-
-  .servicios-title {
-    margin-top: 3rem;
-  }
 
   .container {
     padding-inline: 3rem;
   }
 
-  .servicios-content-1,
-  .servicios-content-2,
-  .servicios-content-3 {
-    padding: 1.5rem 2rem;
-  }
-
   .servicios-content-1 p,
   .servicios-content-3 p {
-    max-width: 600px;
-    margin: 0 auto;
     font-size: var(--size-1);
     line-height: 1.6;
+  }
+
+  .servicios-content-3 {
+    max-width: 100vh;
   }
 
   .picture-7,
@@ -1272,7 +1291,6 @@
 
 @media (max-width: 480px) {
   .servicios-container {
-    padding-block: 5rem 1.5rem;
     padding-inline: 0;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -1298,7 +1316,6 @@
   .servicios-content-1 p,
   .servicios-content-3 p {
     max-width: 90%;
-    /* ✅ más ancho que antes */
     margin: 0 auto;
     font-size: 1rem;
   }
@@ -1336,6 +1353,7 @@
     justify-content: center;
   }
 
+
   .picture-2 {
     display: none;
   }
@@ -1364,7 +1382,9 @@
 }
 
 @media (max-width: 542px) {
-
+  .container {
+    padding-inline: 4rem;
+  }
 
   .input-message,
   .input-email,

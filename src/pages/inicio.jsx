@@ -29,7 +29,7 @@ export default function Inicio() {
       </div>
       <Scroll>
         <section className="section-container width-1 display-flex">
-          <div className="section-content-1 width-6 container text-center padding-block-4">
+          <div className="section-content-1 width-6 text-center padding-block-4">
             <h3 className="uppercase font-color-1 padding-block-2">Abastecimiento y transporte</h3>
             <MdOilBarrel className="icon font-color-1 font-size-4" />
             <ul className="font-color-1 padding-block-2">
@@ -41,7 +41,7 @@ export default function Inicio() {
               <li className="li">- Alquiler de tanques de almacenamiento</li>
             </ul>
           </div>
-          <div className="section-content-2 width-6 container text-center padding-block-4">
+          <div className="section-content-2 width-6 text-center padding-block-4">
             <h3 className="uppercase padding-block-2 font-color-3">Gestión</h3>
             <FaHandHoldingWater className="icon font-color-4 font-size-4" />
             <ul className="font-color-3 padding-block-2">
