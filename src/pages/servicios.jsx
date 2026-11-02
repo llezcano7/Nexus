@@ -14,10 +14,10 @@ export default function Servicios() {
                     <br />
                     <br />
                     Trabajamos con proveedores líderes del mercado nacional, asegurando calidad certificada, cumplimiento normativo y entrega eficiente en todo el país.</p>
-                <img className="picture-9" src="/public/picture-9.webp" alt="" srcset="" />
+                <img className="picture-9" src="picture-9.webp" alt="" />
             </div>
             <div className="servicios-content-2 padding-2 width-1  display-flex align-center gap-3 bg-4">
-                <img className="picture-9" src="/public/picture-9.webp" alt="" srcset="" />
+                <img className="picture-9" src="picture-9.webp" alt="" />
                 <div className="ul-content width-1 display-flex flex-column align-center gap-1">
                     <h4 className="service-content-2 title font-size-4 font-light font-color-1">Ofrecemos</h4>
                     <ul>
@@ -35,18 +35,25 @@ export default function Servicios() {
             </div>
             <Scroll>
                 <div className="servicios-separator padding-block-5 width-1 text-center">
-                    <h2 className="font-size-4 text-center font-color-1 font-light"> Gestion y control de consumo</h2>
+                    <h2 className="font-size-4 text-center font-color-1 font-light"> Gestión y control de consumo</h2>
                 </div>
             </Scroll>
-            <div className="servicios-content-3 bg-3 display-flex align-center justify-center gap-3">
+            <div className="servicios-content-3 bg-3 display-flex align-center justify-center gap-3 padding-block-end-7">
                 <p className="font-size-2 font-light">
-                    A través de nuestro servicio de Gestión de Combustibles, en Nexus ayudamos a las empresas a entender, controlar y optimizar el uso del combustible dentro de sus operaciones, implementando sistemas de trazabilidad total del combustible, desde la compra hasta el consumo, detectando desvíos, pérdidas o ineficiencias operativas y generando reportes automáticos y auditorías personalizadas.
+                    A través de nuestro servicio de Gestión de Combustibles, en Nexus ayudamos a las empresas a entender, controlar y optimizar el uso del combustible dentro de sus operaciones, implementando sistemas de trazabilidad total del combustible, desde la compra hasta el consumo.
                     <br />
-                    Entregamos resultados, no solo informes:
-                    nuestro trabajo se traduce en eficiencia, ahorro y control.
+                    <br />
+                    ● Detectamos desvíos, pérdidas o ineficiencias operativas.
+                    <br />
+                    ● Generamos reportes automáticos y auditorías personalizadas.
+                    <br />
+                    ● Proveemos indicadores clave de gestión (KPIs) para la toma de decisiones.
+                    <br />
+                    <br />
+                    Entregamos resultados, no solo informes: <span className="font-bold font-color-4">nuestro trabajo se traduce en eficiencia, ahorro y control.</span>
                 </p>
                 <div className="picture-7-container">
-                    <img className="picture-7" src="/public/picture-7.webp" alt="" srcset="" />
+                    <img className="picture-7" src="picture-7.webp" alt="" srcset="" />
                 </div>
             </div>
         </section>

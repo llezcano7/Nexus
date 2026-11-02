@@ -7,6 +7,7 @@ import Inicio from './pages/inicio';
 import Contacto from './pages/contacto';
 import Nosotros from './pages/nosotros';
 import Servicios from './pages/servicios';
+import WhatsappButton from './components/whatsapp';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/servicios' element={<Servicios />} />
       </Routes>
+        <WhatsappButton />
   <Footer />
       </>
   )

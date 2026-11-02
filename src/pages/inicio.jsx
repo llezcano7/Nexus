@@ -10,7 +10,7 @@ export default function Inicio() {
   return (
     <>
       <div className="inicio-container container relative display-flex flex-column justify-center">
-        <video autoPlay loop muted className="video width-1" src="public/video.mp4">
+        <video autoPlay loop muted playsInline preload="auto" className="video width-1" src="video.mp4">
         </video>
         <div className="inicio-content relative z-index-2 width-7">
           <h1 className="font-size-4 uppercase"> <span className="font-light">Transportamos</span> Energía</h1>
@@ -22,7 +22,7 @@ export default function Inicio() {
           </div>
         </div>
       </div >
-      <div className="separator padding-block-6 bg-3 text-center">
+      <div className="separator padding-block-6 text-center">
         <Scroll>
           <h2 className="font-size-4 font-color-1 uppercase"> <span className="font-light font-color-4">Somos</span> energía en movimiento</h2>
         </Scroll>
@@ -33,9 +33,9 @@ export default function Inicio() {
             <h3 className="uppercase font-color-1 padding-block-2">Abastecimiento y transporte</h3>
             <MdOilBarrel className="icon font-color-1 font-size-4" />
             <ul className="font-color-1 padding-block-2">
-              <li className="li">- Abastecemos a flotas de vehículos, obradores viales campo y empresas</li>
+              <li className="li">- Abastecemos a flotas de vehículos, obradores viales campos y empresas</li>
               <li className="li">- Transporte y traslado de combustible</li>
-              <li className="li">- Extracción/traspaso de combutibles</li>
+              <li className="li">- Extracción/traspaso de combustibles</li>
               <li className="li">- Venta de lubricantes a granel</li>
               <li className="li">- Limpieza de tanques</li>
               <li className="li">- Alquiler de tanques de almacenamiento</li>
@@ -45,7 +45,7 @@ export default function Inicio() {
             <h3 className="uppercase padding-block-2 font-color-3">Gestión</h3>
             <FaHandHoldingWater className="icon font-color-4 font-size-4" />
             <ul className="font-color-3 padding-block-2">
-              <li className="li">- Garantizamos trasabilidad completa del consumo de combustible</li>
+              <li className="li">- Garantizamos trazabilidad completa del consumo de combustible</li>
               <li className="li">- Detectamos desvíos, pérdidas o ineficiencias operativas</li>
               <li className="li">- Generamos reportes automáticos y auditorías personalizadas</li>
               <li className="li">- Facilitamos la toma de decisiones basadas en datos reales</li>
@@ -54,7 +54,7 @@ export default function Inicio() {
         </section>
       </Scroll>
       <Scroll>
-        <section className="section-container-2 container display-flex align-center bg-3">
+        <section className="section-container-2 container display-flex align-center">
           <div className="inicio-text-container display-flex justify-center align-center space-between">
             <div className="inicio-text-2 width-6  padding-block-5">
               <h4 className="font-size-3 font-color-4 padding-block-end-2">Visión estratégica</h4>

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
-import Scroll from "../components/scroll";
 import "./header.css";
 
 export default function Header() {
@@ -13,12 +12,12 @@ export default function Header() {
   return (
     <header className="header-container container display-flex align-center space-between height-12">
       <Link to="/">
-        <img className="logo" src="/public/logo.webp" alt="Logo" />
+        <img className="logo" src="logo.webp" alt="Logo Nexus Combustible" />
       </Link>
 
       {/* Botón hamburguesa */}
        <button className="hamburger-btn" onClick={toggleMenu}>
-        {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
+        {isOpen ? <HiX size={40} /> : <HiMenu size={40} />}
       </button>
 
         <nav className={`navbar align-end relative display-flex space-between gap-3 ${isOpen ? "open" : ""}`}>

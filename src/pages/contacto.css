@@ -71,7 +71,6 @@
   animation: fadeIn 0.3s ease-in;
 }
 
-/* Animación suave de entrada */
 @keyframes fadeIn {
   from {
     opacity: 0;

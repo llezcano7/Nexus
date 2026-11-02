@@ -2,7 +2,7 @@
   --primary-color: #1e2a34;
   --secondary-color: #157ece;
   --third-color: #fffafa;
-  --fourth-color: #fca118;
+  --fourth-color: #f69015;
 
   --distance-1: 1rem;
   --distance-2: 1.5rem;
@@ -310,6 +310,10 @@
 
 .height-12 {
   height: var(--distance-12);
+}
+
+.height-13 {
+  height: var(--distance-13);
 }
 
 .height-auto {
@@ -883,8 +887,8 @@
 
 @media (max-width: 1023px) {
 
-   .section-container-2.container {
-    padding-inline: 4rem; /* Reduce un poco el padding */
+  .section-container-2.container {
+    padding-inline: 4rem;
   }
 
   .inicio-container {
@@ -932,7 +936,7 @@
 
 @media (max-width: 768px) {
   .section-container-2 .container {
-    padding-inline: 2.5rem; 
+    padding-inline: 2.5rem;
   }
 
   .inicio-container {
@@ -999,6 +1003,7 @@
     top: 0;
     right: -100%;
     flex-direction: column;
+    font-size: var(--size-1);
     align-items: center;
     justify-content: center;
     background: rgba(30, 42, 52, 0.95);
@@ -1016,8 +1021,8 @@
 
 @media (max-width: 606px) {
 
-   .section-container-2.container {
-    padding-inline: 1.5rem; /* Padding moderado */
+  .section-container-2.container {
+    padding-inline: 1.5rem;
   }
 
   .inicio-text-2 {
@@ -1031,7 +1036,7 @@
 @media (max-width: 450px) {
 
   .section-container-2.container {
-    padding-inline: 1rem; 
+    padding-inline: 1rem;
   }
 
   .inicio-content.p {
@@ -1176,10 +1181,6 @@
 
 /*NOSOTROS RESPONSIVE*/
 
-@media (max-width: 997px){
- 
-}
-
 @media (max-width: 865px) {
 
   .picture-6,
@@ -1207,12 +1208,20 @@
   .servicios-separator h2 {
     font-size: 1.5rem;
   }
+}
 
-  .company-container {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap: var(--distance-1)
+@media (max-width: 768px) {
+  .company-logos {
+    height: 60px;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logos {
+    width: 150px;
+    height: auto;
+    margin: 0 5px;
   }
 }
 

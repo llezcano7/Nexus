@@ -34,11 +34,11 @@ export default function Contacto() {
   };
 
   return (
-    <div className="contact-container container align-center justify-center display-flex gap-6 padding-block-18">
+    <div className="contact-container container padding-block-start-6 align-center justify-center display-flex gap-6">
       <div className="form-container">
-        <h2 className="form-title slide-down font-size-4 font-light font-color-4 padding-block-4">Contacto</h2>
+        <h2 className="form-title font-size-4 font-light font-color-4 padding-block-4">Contacto</h2>
         {sent && (<div className="success-message"> ✅ Su mensaje ha sido enviado correctamente. </div>)}
-        <form className="form display-flex flex-column align-center gap-3" ref={form} onSubmit={sendEmail}>
+        <form className="form display-flex flex-column  align-center gap-3" ref={form} onSubmit={sendEmail}>
           <div className="input-container display-flex gap-2">
             <input className="input-text" placeholder="Nombre completo" type="text" name="user_name" requiered />
             <input className="input-email" placeholder="E-mail" type="email" name="user_email" required />
@@ -49,7 +49,7 @@ export default function Contacto() {
           </div>
         </form>
       </div>
-      <img className="picture-2" src="picture-3.webp" alt="" />
+      <img className="picture-2" src="picture-3.webp" alt="Persona recibiendo llamadas y mensajes de contacto" />
     </div>
   );
 }
